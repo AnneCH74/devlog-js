@@ -43,3 +43,5 @@ var kelvins = prompt("Quelle est la température en Kelvins aujourd'hui ?");
 ```
 
 et relancer le programme.
+
+=> une fenêtre s'affiche sur la page et demande la température. Une fois OK validé, le résultat s'affiche dans la console (ligne en Celsius puis ligne en Fahrenheit)
