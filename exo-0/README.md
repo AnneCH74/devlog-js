@@ -27,3 +27,4 @@ Décommenter la ligne puis recharger la page.
 ```
 
 Que se passe-t-il et pourquoi ?
+Un message d'erreur s'affiche car MyVariable n'est pas défini

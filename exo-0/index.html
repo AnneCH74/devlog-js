@@ -1,53 +1,76 @@
+<!-- C'est un fichier de format html -->
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- la police des caractères est "utf-8" -->
         <meta charset="utf-8">
     </head>
     <body>
-
+<!-- Le titre principal est "Exercice 0" -->
         <h1>Exercice 0</h1>
-
+<!-- Le format utilisé est du texte et du javascript -->
         <script type="text/javascript">
 
         /* Section 1 */   
-
+        // Déclaration d'une variable intitulée "name" dont la valeur est un format de chaine de caractères (ici Joe)
         var name = "Joe";
+        //Déclaration d'une variable intitulée "city" dont la valeur est un format de chaine de caractères (ici London)
         var city = 'London';
+        //Déclaration d'une variable intitulée "age" dont la valeur est un format de nombre entier (ici 32)
         var age = 32;
+        //Déclaration d'une variable intitulée "isRed" de type boleen (ici true)
         var isRed = true;
+        //Déclaration d'une variable intitulée "isOld" de type boleen (ici age superieur à 80)
         var isOld = age > 80;
 
+        //Déclaration 'une variable nommée "previousJobs" dont la valeur est un tableau à 1 entrée et 3 cases contenant des chaines de texte (ici métiers)
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
 
+        //Initialisation de la fonction nommée info qui prend en compte la variable height et la variable weight.
         function info(height, weight) {
+            //Si height est supérieur à 180
             if (height > 180) {
+               // Alors afficher dans la console "vous êtes grand"
                 console.log('Vous êtes grand');
             }
+            //Si weight est inférieur à 0 
             if (weight < 0) {
+                //alors afficher dans la console le message "oups, there is a problem"
                 console.log('oups, there is a problem');
+                //Sinon Si weight est inférieur à 15 
             } else if ( weight < 15) {
+                //alors afficher dans la console le message "Are you that slim"
                 console.log('Are you that slim ?')
+                //Sinon afficher dans la console le message "Good !"
             } else {
                 console.log('Good !')
             }
         }
 
+        //Initialisation de la fonction info (ayant pour paramètres 165 et 45)
         info(165, 45);
 
+        //Déclaration d'une variable myHeight de type nombre entier, ici 175
         var myHeight = 175;
+        //Déclaration d'une variable myWeight de type nombre entier, ici 86
         var myWeight = 86;
 
+        //
         info(myHeight, myWeight);
 
         info(myHeight + 15, myWeight - 100);
 
+        // initialisation du format de la fonction toUpper pour que le résultat apparaisse en majuscule
         function toUpper(variable) {
             return variable.toUpperCase();
         }
 
+        //Déclaration d'une variable nommée "upperName" correspondant à la fonction toUpper prenant en paramètre la variable "name"
         var upperName = toUpper(name);
 
+        //Déclaration d'une boucle de type for, ayant comme paramètres une variable i = 0, qui ne dépasse pas la valeur 3 et à chaque fois que la boucle s'exécute i augmente de 1
         for (i = 0; i < 3; i = i + 1) {
+            //affiche dans la console la variable previousJobs à l'index i (pour i = 0 alors "previousJObs = lawyer", pour i=1 alors "previousJobs = developper"et pour i =2 alors "previousJobs = professionnal climber")  
             console.log(previousJobs[i]);
         }
 
@@ -57,9 +80,12 @@
 
         // afficher si Joe est roux ou pas.
 
+        console.log (city);
+        console.log (isRed) ;
+
         /* Section 3 */
 
-        // console.log(myVariable);
+        console.log(myVariable);
 
         </script>
 
